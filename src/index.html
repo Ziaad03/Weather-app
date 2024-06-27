@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div id="container">
+      <div id="leftSection">
+        <div id="searchBar">
+          <div class="group">
+            <svg class="icon" aria-hidden="true" viewBox="0 0 24 24">
+              <g>
+                <path
+                  d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"
+                ></path>
+              </g>
+            </svg>
+            <input
+              id="location-input"
+              placeholder="Location"
+              type="search"
+              class="input"
+            />
+          </div>
+        </div>
+        <div id="weatherDetails">
+          <div id="weather-text-section">
+            <h1 id="temp"></h1>
+            <h2 id="weather-text"></h2>
+            <h3 id="country-city"></h3>
+          </div>
+          <div id="components-section">
+            <div id="feels-like" class="component">
+              <div class="feels-1st">
+                <h4>Feels like</h4>
+                <h3></h3>
+              </div>
+              <p></p>
+            </div>
+            <div id="ppt" class="component">
+              <h4>PRECIPITATION</h4>
+              <h2></h2>
+            </div>
+            <div id="visibilty" class="component">
+              <h4>VISIBILTY</h4>
+              <h2></h2>
+            </div>
+            <div id="humidity" class="component">
+              <h4>HUMIDITY</h4>
+              <h2></h2>
+            </div>
+          </div>
+
+          <video id="video-bg" autoplay muted loop></video>
+        </div>
+      </div>
+
+      <div id="rightSection">
+        <div id="hourlyForecast" class="forecast">
+          <h3>Hourly Forecast</h3>
+          <div class="forecast-content">
+            <!-- Hourly forecast details go here -->
+          </div>
+        </div>
+        <div id="dailyForecast" class="forecast">
+          <h3>10-Day Forecast</h3>
+          <div id="forecast-content" class="scroll-1"></div>
+        </div>
+        <div id="uvIndex" class="detail">
+          <h3>UV Index</h3>
+          <div id="detail-content">
+            <!-- UV Index details go here -->
+          </div>
+        </div>
+        <div id="windCondition" class="detail">
+          <h3>Wind</h3>
+          <div id="wind-detail-content">
+            <!-- Wind condition details go here -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
